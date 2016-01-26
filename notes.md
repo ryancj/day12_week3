@@ -1,4 +1,4 @@
-#Week 3 Day 2(12)
+#Week 3 Day 12
 
 ###Sinatra
 - Thin layer on top of rack gem
@@ -50,3 +50,17 @@ end
 - Hello **<%=** name **%>**, displays Ruby code
 - ctrl+shift+.(with =), ctrl+.(just brackets), ctrl+shift+3(comments)
 - @instance_variables for other files to access
+- Use layout when you need to repeat your code
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My First Sinatra App</title>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
+```
+- erb :greeting, layout: :app_layout 
