@@ -63,4 +63,23 @@ end
   </body>
 </html>
 ```
-- erb :greeting, layout: :app_layout 
+- erb :greeting, layout: :app_layout
+- undeclared instance variables return **nil**
+
+###Forms
+- gem install faker
+```html
+<%# action > URL%>
+<%# method > HTTP Verb (only GET/POST) %>
+<form action="/company" method="POST">
+
+</form>
+```
+- must use name attribute to capture user data
+- params.to_s (because params is a hash)
+- params will return string, so convert
+- end with to_s to display
+```html
+<% if @f %>
+```
+- if nil 
