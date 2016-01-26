@@ -47,4 +47,4 @@ get "/" do
 end
 ```
 - Ruby tags <% %>
-- <h2>Hello **<%=** name **%**></h2>, displays Ruby code
+- Hello **<%=** name **%**>, displays Ruby code
