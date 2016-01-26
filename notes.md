@@ -23,3 +23,28 @@ name = params[:name]
 #params will be: {"name" => Ryan, "city" => "Burnaby"}
 #params[:name] or params["name"]
 ```
+- Dynamic URL
+```ruby
+#this is a dynamic url. It will match /greeting/anything
+#for example: /greeting/john or greeting/hello
+get "/greeting/:name" do |name|
+  "Hello #{name} or Hello #{params[:name]}"
+
+end
+```
+- Access by any HTTP interface "curl http://localhost:4567"
+
+###ERB
+- Templating system, built in for sinatra
+- views folder in the app folder, inside: index.erb
+```ruby
+get "/" do
+#this will render a template views/index.erb and sends it
+#as a response (this is a Sinatra convention)
+#erb is a ruby method (built-in with Sinatra) that takes in a first arguement
+#which is a symbol that references a file name
+  erb :index
+end
+```
+- Ruby tags <% %>
+- <h2>Hello **<%=** name **%**></h2>, displays Ruby code
