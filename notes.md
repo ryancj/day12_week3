@@ -47,4 +47,6 @@ get "/" do
 end
 ```
 - Ruby tags <% %>
-- Hello **<%=** name **%**>, displays Ruby code
+- Hello **<%=** name **%>**, displays Ruby code
+- ctrl+shift+.(with =), ctrl+.(just brackets), ctrl+shift+3(comments)
+- @instance_variables for other files to access
