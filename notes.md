@@ -18,3 +18,8 @@ name = params[:name]
 "Hello #{name}"
 ```
 - http://localhost:4567/greeting?name=Ryan (& to chain)
+```ruby
+#if your URL is: http://localhost:4567/greeting?name=Ryan&city=Burnaby
+#params will be: {"name" => Ryan, "city" => "Burnaby"}
+#params[:name] or params["name"]
+```
