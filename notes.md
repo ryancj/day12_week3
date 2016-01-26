@@ -6,5 +6,6 @@
 - WEBrick because it is based on rack
 
 ###HyperText Transfer Protocol (HTTP)
-- REST (most apis/sites use REST)
-- Architecture style for networked applications 
+- **REST** (most apis/sites use REST)
+- Architecture style for networked applications
+- REST uses four HTTP verbs
