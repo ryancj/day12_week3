@@ -12,4 +12,9 @@
 - Get, Host, Patch/Puts, Delete = display, create/add, update, delete
 - HTTP response codes: 100(informational), 200(success), 300(redirectional),
 400(client error), 500(server error)
-- gem install sinatra-contrib --no-ri --no-rdoc 
+- gem install sinatra-contrib --no-ri --no-rdoc
+```ruby
+name = params[:name]
+"Hello #{name}"
+```
+- http://localhost:4567/greeting?name=Ryan (& to chain)
